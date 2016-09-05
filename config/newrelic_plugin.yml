@@ -1,0 +1,7 @@
+newrelic:
+  license_key: <%= ENV['NEWRELIC_LICENSE_KEY'] %>
+agents:
+  redis:
+    instance_name: <%= ENV['REDIS_INSTANCE_NAME'] %>
+    url: <%= ENV['REDIS_URL'] %>
+    database: <%= ENV['REDIS_DB'] || 'db0' %>
